@@ -1,0 +1,147 @@
+@font-face {
+    font-family: font;
+    src: url('Yekan-Bakh-FaNum-05-Medium.woff');
+}
+*{
+    font-family: font;
+}
+.container {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    direction: rtl;
+}
+ 
+
+ 
+/* Page Style */
+ 
+
+
+ 
+.timer-wrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+ 
+#canvas {
+    transform: rotate(-90deg);
+}
+ 
+span#timing {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+    color: #ff0077;
+}
+ 
+.hide {
+    display: none !important;
+}
+ 
+.disabled {
+    opacity: 0.1;
+    position: relative;
+}
+ 
+.disabled::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    z-index: 10;
+}
+ h3{
+    color: white;
+ }
+.score-wrapper h3 #score {
+    background-color: #ff0077;
+    color: white;
+    text-shadow: 0 0 5px #e91e63;
+    padding: 2px 25px;
+}
+ 
+#question-wrapper {
+    direction: ltr;
+}
+ 
+#question-wrapper .question {
+    font-size: 104px;
+    margin: 0 15px;
+}
+ 
+#question-wrapper .variable {
+    color: #ffffff;
+    ;
+}
+ 
+#question-wrapper .operator {
+    color: #ff0079;
+}
+ 
+.answer,
+#load-game {
+    width: 260px;
+    padding: 25px;
+    font-size: 25px;
+    color: white;
+    display: inline-block;
+    margin: 0 55px;
+    border-radius: 45px;
+    cursor: pointer;
+    margin-top: 8%;
+}
+ 
+
+#load-game:hover {
+    width: 139px;
+   margin-top: 2%;
+    border:     none;
+    background-color: #ff0079;
+    box-shadow:0px 0px 24px #ff00795c;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+ 
+.answer#correct {
+    background-image: linear-gradient(337deg, #13c0ffd9, #1acdff8d);
+}
+ 
+.answer#wrong {
+    background-image: linear-gradient(337deg, #ff0079, #ff298d5c)
+}
+ 
+#load-game {
+    margin-top: 1%;
+    text-align: center;
+    background-color: #ff0077;
+    border: none;
+    box-shadow:0px 0px 24px #ff00793c;
+    border-radius: 8px;
+    transition: 0.3s;
+    width: 140px;
+}
+body{
+    background-color: #18161c;
+}
+#hint{
+    bottom: -43px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #1c1b1e;
+    color: #5c5c5c;
+    width: 45%;
+    border-radius: 5px;
+}
