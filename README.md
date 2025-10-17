@@ -35,4 +35,4 @@ NumSpeed is a minimal, fast web-app that measures and improves your speed and ac
 ## 🛠️ Quick start
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/numspeed.git
+   git clone https://github.com/MahanMalekjary/NumQuest.git
